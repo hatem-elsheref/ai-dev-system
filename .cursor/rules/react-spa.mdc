@@ -1,0 +1,16 @@
+---
+description: React SPA architecture and quality standards
+globs: ["frontend/**", "**/*.{js,jsx,ts,tsx}"]
+alwaysApply: false
+---
+
+# React SPA Rules
+
+- Use component architecture with clear responsibility boundaries.
+- Build reusable UI primitives before one-off components.
+- Avoid inline styles; use design system tokens/classes.
+- Organize by feature modules, not only technical layers.
+- Use lazy loading and route-level splitting where sensible.
+- Ensure mobile responsiveness.
+- Maintain accessibility support (semantic HTML, labels, keyboard usage).
+- Support dynamic theming via centralized tokens/context.

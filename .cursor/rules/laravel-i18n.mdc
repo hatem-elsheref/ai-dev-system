@@ -1,0 +1,16 @@
+---
+description: Laravel localization and translation key conventions
+globs: ["backend/**", "**/*.php", "**/*.blade.php"]
+alwaysApply: false
+---
+
+# Laravel i18n Rules
+
+- Use translation helper with one-dot format only: `__('file.key')`.
+- Keep translation keys flat with underscores (example: `users_name`, `order_created`).
+- Do not use nested dot keys like `app.users.name`.
+- Do not use file-less keys like `app_users_name`.
+- Store user-facing strings in language files, not hardcoded in controllers/resources/views.
+- Keep Arabic and English translation files aligned by key.
+- Use `validation.attributes` for field labels in validation messages.
+- Follow guide: `docs/guides/laravel-translation-guide.md`.

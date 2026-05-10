@@ -1,0 +1,19 @@
+---
+description: Advanced Laravel implementation patterns and extensibility rules
+globs: ["backend/**", "**/*.php"]
+alwaysApply: false
+---
+
+# Laravel Advanced Patterns Rules
+
+- Keep migrations granular (one table per migration) with rollback-safe design.
+- Add indexes early for common filtering, sorting, and relationship access paths.
+- Use auditable pattern for critical domain entities.
+- Use settings service + cache for runtime-configurable behavior.
+- Implement provider integrations through contracts/interfaces and container bindings.
+- Keep notification delivery channel-based and preference-driven, not hardcoded.
+- Use repository/query-object style for complex filtering with `when()` chaining.
+- Keep route versioning and admin segregation explicit.
+- Use queue workers + supervisor/horizon for asynchronous processing.
+- Keep monitoring and alerting integrations (for example Sentry) environment-aware.
+- Follow mandatory guide: `docs/guides/laravel-advanced-patterns-guide.md`.

@@ -1,0 +1,17 @@
+---
+description: General engineering behavior for all work
+globs:
+alwaysApply: true
+---
+
+# General Rules
+
+- Keep solutions simple, maintainable, and production-ready.
+- Avoid over-engineering and unnecessary abstractions.
+- Do not duplicate logic; extract reusable modules when justified.
+- Never hardcode environment-specific values or secrets.
+- Design for scalability and operational clarity.
+- Follow SOLID principles pragmatically.
+- Prefer explicit naming and clear boundaries.
+- Follow repository guidebook in `BASIC_GUIDES.md`.
+- Update documentation when behavior or architecture changes.

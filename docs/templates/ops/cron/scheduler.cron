@@ -1,0 +1,2 @@
+# Laravel scheduler (production)
+* * * * * cd /var/www/app.com && php artisan schedule:run >> /dev/null 2>&1

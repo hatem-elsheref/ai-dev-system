@@ -1,0 +1,14 @@
+---
+description: MySQL schema and query quality rules
+globs: ["backend/**", "**/*.sql", "**/migrations/**"]
+alwaysApply: false
+---
+
+# MySQL Rules
+
+- Normalize schema based on domain needs and access patterns.
+- Add indexes for frequent filters, joins, and ordering.
+- Prevent N+1 queries through eager loading or query redesign.
+- Use foreign keys to protect referential integrity.
+- Plan for scalability (pagination, selective columns, batching).
+- Use soft deletes only when business requirements need recoverability.

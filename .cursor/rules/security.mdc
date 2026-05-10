@@ -1,0 +1,18 @@
+---
+description: Security baseline for generated and reviewed code
+globs:
+alwaysApply: true
+---
+
+# Security Rules
+
+- Validate and sanitize all external inputs.
+- Prevent SQL injection with parameterized queries/ORM safeguards.
+- Prevent XSS through output escaping and safe rendering.
+- Never expose secrets, tokens, or credentials in code or logs.
+- Enforce authorization checks and RBAC for protected actions.
+- Apply secure defaults for sessions, CORS, and error responses.
+- Ensure production defaults: `APP_DEBUG=false`, HTTPS-only, secure headers, and rate limiting on auth/API routes.
+- Require dependency vulnerability checks (`composer audit`) before release.
+- Follow `docs/guides/laravel-security-hardening-guide.md` for app + infra security decisions.
+- For Dockerized deployments, enforce Nginx upload-shell protections and sensitive-path deny rules from `docs/guides/laravel-docker-hardening-guide.md`.

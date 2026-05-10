@@ -1,0 +1,22 @@
+---
+description: AI workflow lifecycle before and after coding
+globs:
+alwaysApply: true
+---
+
+# AI Behavior Lifecycle
+
+## Before Coding
+- Read `PROJECT_BRAIN.md` for problem statement, personas, KPIs, MVP scope, and non-goals when planning features.
+- Analyze requested architecture and constraints first.
+- Analyze existing modules and reuse opportunities.
+- Detect direct and transitive dependencies impacted by changes.
+- Detect feature impact across API, DB, frontend, and mobile.
+- Update or generate required documentation before implementation.
+
+## After Coding
+- Generate or update automated tests for new behavior.
+- Review code quality for maintainability and clarity.
+- Check performance implications and likely bottlenecks.
+- Check security implications and unsafe patterns.
+- Update project docs and decision records to match implementation.

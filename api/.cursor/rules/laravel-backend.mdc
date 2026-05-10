@@ -1,0 +1,24 @@
+---
+description: Laravel backend source-of-truth architecture and coding standards
+globs: ["backend/**", "**/*.php"]
+alwaysApply: false
+---
+
+# Laravel Backend Bible Rules
+
+- Use latest stable Laravel conventions and PHP 8.3+ style.
+- Require `declare(strict_types=1);` in PHP files created or edited.
+- Keep controllers thin: validate, authorize, delegate, respond.
+- Put business logic in domain services/actions.
+- Use Form Requests for validation and authorization.
+- Use API Resources for response consistency.
+- Use enums instead of magic strings for state/status values.
+- Use contracts/interfaces for pluggable providers (payments, SMS, external APIs).
+- Use repositories only for complex data access/query composition.
+- Prefer `when()` query chaining and eager loading to avoid N+1 issues.
+- Use `$request->validated()` for write paths; avoid `$request->all()`.
+- Enforce policies/permissions for protected operations.
+- Maintain consistent API response shape (`data/meta/links`, `message/data`, `message/errors`).
+- Keep translations in one-dot flat-key format `__('file.key')`.
+- Follow mandatory reference: `docs/guides/laravel-backend-bible.md`.
+- Apply advanced patterns from `docs/guides/laravel-advanced-patterns-guide.md` when implementing scalable modules.

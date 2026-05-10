@@ -1,0 +1,13 @@
+---
+description: React Native implementation and architecture standards
+globs: ["mobile/**", "**/*.{js,jsx,ts,tsx}"]
+alwaysApply: false
+---
+
+# React Native Rules
+
+- Use a shared design system approach for visual consistency.
+- Keep API integration behind an abstraction layer.
+- Prefer reusable components and hooks over duplicated screens logic.
+- Build responsive/adaptive layouts for varied device sizes.
+- Design for offline-ready behavior where product scope requires it.

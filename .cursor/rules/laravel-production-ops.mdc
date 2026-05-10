@@ -1,0 +1,15 @@
+---
+description: Laravel production operations, monitoring, and performance standards
+globs: ["backend/**", "**/*.php", "**/*.yml", "**/*.yaml", "**/*.conf", "**/*.ini"]
+alwaysApply: false
+---
+
+# Laravel Production Ops Rules
+
+- Ensure supervisor-managed workers for queues/horizon in production.
+- Ensure scheduler is configured via cron or managed process.
+- Keep web server config HTTPS-first with secure headers and rate limiting.
+- Require production optimization steps (`config:cache`, `route:cache`, `view:cache`).
+- Use observability stack (Sentry + queue monitoring) with environment-safe settings.
+- Prefer deployment-safe commands (`migrate --force`, queue restart/terminate hooks).
+- Follow mandatory reference: `docs/guides/laravel-production-setup-guide.md`.

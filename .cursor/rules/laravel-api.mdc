@@ -1,0 +1,19 @@
+---
+description: Laravel API architecture and implementation constraints
+globs: ["backend/**", "**/*.php"]
+alwaysApply: false
+---
+
+# Laravel API Rules
+
+- Keep controllers thin; orchestration only.
+- Place business logic in dedicated services/actions.
+- Use repository pattern only when it adds clear value.
+- Validate inputs with Form Requests and explicit rules.
+- Return responses through API Resources/Transformers.
+- Move heavy operations to queued jobs.
+- Enforce authorization with policies and permissions.
+- Keep migrations clean, reversible, and consistent.
+- Never place business logic in controllers.
+- Use Laravel translation keys in `file.key` format only, with flat keys (for example `messages.order_created`).
+- Follow domain architecture and coding baseline in `docs/guides/laravel-backend-bible.md`.
